@@ -10,7 +10,7 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	$(CXX) $(CXXFLAGS) $(OBJ) -o $(NAME)
 
-%.o: %.cpp Array.hpp
+%.o: %.cpp Array.hpp Array.tpp
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 clean:
